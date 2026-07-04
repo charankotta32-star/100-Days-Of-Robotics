@@ -1,53 +1,38 @@
 #include <iostream>
-#include <string>
-
 using namespace std;
 
-class Sensor {
+class Drone {
 public:
-    string sensorName;
+    string name;
 
-    virtual void scanEnvironment() {
-        cout << "[Generic Sensor] Scanning..." << endl;
+    Drone(string n) {
+        name = n;
+        cout << "[SYSTEM] Memory Allocated. Drone " << name << " created." << endl;
     }
-};
 
-class mmWaveRadar : public Sensor {
-public:
-    void scanEnvironment() override {
-        cout << "[" << sensorName << "] PENETRATING CONCRETE... Human Breathing Detected at 4.2 Meters." << endl;
+    ~Drone() {
+        cout << "[SYSTEM] Memory Freed. Drone " << name << " destroyed." << endl;
     }
-};
 
-class LoRaRadio : public Sensor {
-public:
-    void scanEnvironment() override {
-        cout << "[" << sensorName << "] MESH NETWORK ACTIVE... Transmitting data to Commander Tablet." << endl;
-    }
-};
-
-class AcousticMic : public Sensor {
-public:
-    void scanEnvironment() override {
-        cout << "[" << sensorName << "] Filtering fire noise... Human tapping heard!" << endl;
+    void fly() {
+        cout << name << " is flying at 100 meters." << endl;
     }
 };
 
 int main() {
+    cout << "--- INITIATING MANUAL MEMORY OVERRIDE ---" << endl;
 
-    mmWaveRadar radar;
-    radar.sensorName = "HLK-LD2410";
+    Drone* myDrone = new Drone("Sky-Node-1");
+    myDrone->fly();
+    delete myDrone; 
 
-    LoRaRadio radioNode;
-    radioNode.sensorName = "SX1278";
+    cout << endl;
 
-    AcousticMic acousticMicNode;
-    acousticMicNode.sensorName = "Microphone";
+    Drone* backupDrone = new Drone("Sky-Node-2");
 
-    cout << "--- RESQ-SANJEEVINI BOOT SEQUENCE ---" << endl;
-    radar.scanEnvironment();
-    radioNode.scanEnvironment();
-    acousticMicNode.scanEnvironment();
+    backupDrone->fly();
 
+    delete backupDrone;
+    cout << "--- OPERATION COMPLETE ---" << endl;
     return 0;
 }
