@@ -15,7 +15,7 @@ foreach(src ${SOURCES})
         # Create an executable target ONLY for this single file
         if(NOT TARGET ${target_name})
             add_executable(${target_name} ${src}
-                    Day4_DSA_Systems/Singly_LinkedList_InsertTail.cpp)
+                    Day4_LinkedLists_Buffers/Singly_LinkedList_InsertTail.cpp)
         endif()
     endif()
 endforeach()
