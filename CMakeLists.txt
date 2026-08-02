@@ -3,19 +3,19 @@ project(100_Days_Of_Robotics)
 
 set(CMAKE_CXX_STANDARD 20)
 
-# Automatically scan for existing .cpp files in the project directory
-file(GLOB_RECURSE EXISTING_CPP_FILES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} "*.cpp")
+# Recursively find all .cpp files
+file(GLOB_RECURSE SOURCES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} "*.cpp")
 
-foreach(FILE_PATH ${EXISTING_CPP_FILES})
-    # Ignore CLion's internal build directory
-    if(NOT FILE_PATH MATCHES "^cmake-build-debug")
-        # Extract target name (e.g. "Self_Referential_Node")
-        get_filename_component(TARGET_NAME ${FILE_PATH} NAME_WE)
+foreach(src ${SOURCES})
+    # Ignore cmake build directory
+    if(NOT src MATCHES "^cmake-build-debug")
+        # Extract filename without extension
+        get_filename_component(target_name ${src} NAME_WE)
 
-        # Create executable for THIS SINGLE FILE ONLY
-        if(NOT TARGET ${TARGET_NAME})
-            add_executable(${TARGET_NAME} ${FILE_PATH}
-                    Day3_DSA_Systems/Double_Pointer_Memory.cpp)
+        # Create an executable target ONLY for this single file
+        if(NOT TARGET ${target_name})
+            add_executable(${target_name} ${src}
+                    Day4_DSA_Systems/Singly_LinkedList_InsertTail.cpp)
         endif()
     endif()
 endforeach()
