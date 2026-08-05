@@ -15,7 +15,8 @@ foreach(src ${SOURCES})
         # Create an executable target ONLY for this single file
         if(NOT TARGET ${target_name})
             add_executable(${target_name} ${src}
-                    Day4_LinkedLists_Buffers/Singly_LinkedList_InsertTail.cpp)
+                    Day5_Advanced_ROS2/PID_Motor_Controller.cpp
+                    Day5_Advanced_ROS2/ROS2_Service_Server.cpp)
         endif()
     endif()
 endforeach()
