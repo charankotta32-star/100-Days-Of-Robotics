@@ -16,7 +16,10 @@ foreach(src ${SOURCES})
         if(NOT TARGET ${target_name})
             add_executable(${target_name} ${src}
                     Day5_Advanced_ROS2/PID_Motor_Controller.cpp
-                    Day5_Advanced_ROS2/ROS2_Service_Server.cpp)
+                    Day5_Advanced_ROS2/ROS2_Service_Server.cpp
+                    Day6_Sensor_Fusion/MPU6050_Accel_Struct.cpp
+                    Day6_Sensor_Fusion/Motion_Trigger_FSM.cpp
+                    Day6_Sensor_Fusion/Telemetry_Stack_Buffer.cpp)
         endif()
     endif()
 endforeach()
