@@ -19,7 +19,10 @@ foreach(src ${SOURCES})
                     Day5_Advanced_ROS2/ROS2_Service_Server.cpp
                     Day6_Sensor_Fusion/MPU6050_Accel_Struct.cpp
                     Day6_Sensor_Fusion/Motion_Trigger_FSM.cpp
-                    Day6_Sensor_Fusion/Telemetry_Stack_Buffer.cpp)
+                    Day6_Sensor_Fusion/Telemetry_Stack_Buffer.cpp
+                    Day7_DSA_Queue_and_Sensors/Queue_ADT_LinkedList.cpp
+                    Day7_DSA_Queue_and_Sensors/ROS2_Message_Queue.cpp
+                    Day7_DSA_Queue_and_Sensors/Sensor_Data_Cleaner.cpp)
         endif()
     endif()
 endforeach()
