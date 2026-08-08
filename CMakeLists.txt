@@ -22,7 +22,10 @@ foreach(src ${SOURCES})
                     Day6_Sensor_Fusion/Telemetry_Stack_Buffer.cpp
                     Day7_DSA_Queue_and_Sensors/Queue_ADT_LinkedList.cpp
                     Day7_DSA_Queue_and_Sensors/ROS2_Message_Queue.cpp
-                    Day7_DSA_Queue_and_Sensors/Sensor_Data_Cleaner.cpp)
+                    Day7_DSA_Queue_and_Sensors/Sensor_Data_Cleaner.cpp
+                    Day8_DSA_Trees_and_Robotics/Binary_Tree_Sensor_Hierarchy.cpp
+                    Day8_DSA_Trees_and_Robotics/BST_Obstacle_Distance_Search.cpp
+                    Day8_DSA_Trees_and_Robotics/Tree_Traversal_Inorder.cpp)
         endif()
     endif()
 endforeach()
