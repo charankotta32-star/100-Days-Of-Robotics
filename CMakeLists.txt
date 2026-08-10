@@ -28,7 +28,10 @@ foreach(src ${SOURCES})
                     Day8_DSA_Trees_and_Robotics/Tree_Traversal_Inorder.cpp
                     Day9_DSA_Graph_and_Navigation/Graph_Adjacency_Matrix.cpp
                     Day9_DSA_Graph_and_Navigation/BFS_Robot_Pathfinding.cpp
-                    Day9_DSA_Graph_and_Navigation/Dijkstra_LoRa_Routing.cpp)
+                    Day9_DSA_Graph_and_Navigation/Dijkstra_LoRa_Routing.cpp
+                    Day10_Robotics_SLAM_and_Vision/Occupancy_Grid_Map.cpp
+                    Day10_Robotics_SLAM_and_Vision/Kalman_Filter_1D.cpp
+                    Day10_Robotics_SLAM_and_Vision/Image_Color_Thresholding.cpp)
         endif()
     endif()
 endforeach()
