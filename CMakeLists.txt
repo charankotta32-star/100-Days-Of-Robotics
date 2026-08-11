@@ -31,7 +31,10 @@ foreach(src ${SOURCES})
                     Day9_DSA_Graph_and_Navigation/Dijkstra_LoRa_Routing.cpp
                     Day10_Robotics_SLAM_and_Vision/Occupancy_Grid_Map.cpp
                     Day10_Robotics_SLAM_and_Vision/Kalman_Filter_1D.cpp
-                    Day10_Robotics_SLAM_and_Vision/Image_Color_Thresholding.cpp)
+                    Day10_Robotics_SLAM_and_Vision/Image_Color_Thresholding.cpp
+                    Day11_Robotics_Control_and_State/Motor_PWM_Mapping.cpp
+                    Day11_Robotics_Control_and_State/Sensor_Calibration_Offset.cpp
+                    Day11_Robotics_Control_and_State/Differential_Drive_Kinematics.cpp)
         endif()
     endif()
 endforeach()
