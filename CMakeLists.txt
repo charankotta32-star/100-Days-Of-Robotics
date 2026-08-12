@@ -34,7 +34,10 @@ foreach(src ${SOURCES})
                     Day10_Robotics_SLAM_and_Vision/Image_Color_Thresholding.cpp
                     Day11_Robotics_Control_and_State/Motor_PWM_Mapping.cpp
                     Day11_Robotics_Control_and_State/Sensor_Calibration_Offset.cpp
-                    Day11_Robotics_Control_and_State/Differential_Drive_Kinematics.cpp)
+                    Day11_Robotics_Control_and_State/Differential_Drive_Kinematics.cpp
+                    Day12_Robotics_Computer_Vision/OpenCV_Frame_Difference.cpp
+                    Day12_Robotics_Computer_Vision/Hash_Table_Spatial_Indexing.cpp
+                    Day12_Robotics_Computer_Vision/Bounding_Box_IOU_Filter.cpp)
         endif()
     endif()
 endforeach()
