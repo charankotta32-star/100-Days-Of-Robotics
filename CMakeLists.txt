@@ -37,7 +37,10 @@ foreach(src ${SOURCES})
                     Day11_Robotics_Control_and_State/Differential_Drive_Kinematics.cpp
                     Day12_Robotics_Computer_Vision/OpenCV_Frame_Difference.cpp
                     Day12_Robotics_Computer_Vision/Hash_Table_Spatial_Indexing.cpp
-                    Day12_Robotics_Computer_Vision/Bounding_Box_IOU_Filter.cpp)
+                    Day12_Robotics_Computer_Vision/Bounding_Box_IOU_Filter.cpp
+                    Day13_Robotics_rPPG_and_Signals/Butterworth_Bandpass_Filter.cpp
+                    Day13_Robotics_rPPG_and_Signals/Cross_Region_Correlation.cpp
+                    Day13_Robotics_rPPG_and_Signals/QuickSort_Confidence_Scores.cpp)
         endif()
     endif()
 endforeach()
