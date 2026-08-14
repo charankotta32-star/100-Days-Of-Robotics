@@ -40,7 +40,10 @@ foreach(src ${SOURCES})
                     Day12_Robotics_Computer_Vision/Bounding_Box_IOU_Filter.cpp
                     Day13_Robotics_rPPG_and_Signals/Butterworth_Bandpass_Filter.cpp
                     Day13_Robotics_rPPG_and_Signals/Cross_Region_Correlation.cpp
-                    Day13_Robotics_rPPG_and_Signals/QuickSort_Confidence_Scores.cpp)
+                    Day13_Robotics_rPPG_and_Signals/QuickSort_Confidence_Scores.cpp
+                    Day14_PathPlanning_and_Filtering/A_Star_Grid_Planner.cpp
+                    Day14_PathPlanning_and_Filtering/Moving_Average_Filter.cpp
+                    Day14_PathPlanning_and_Filtering/Trapezoidal_Velocity_Profile.cpp)
         endif()
     endif()
 endforeach()
