@@ -43,7 +43,10 @@ foreach(src ${SOURCES})
                     Day13_Robotics_rPPG_and_Signals/QuickSort_Confidence_Scores.cpp
                     Day14_PathPlanning_and_Filtering/A_Star_Grid_Planner.cpp
                     Day14_PathPlanning_and_Filtering/Moving_Average_Filter.cpp
-                    Day14_PathPlanning_and_Filtering/Trapezoidal_Velocity_Profile.cpp)
+                    Day14_PathPlanning_and_Filtering/Trapezoidal_Velocity_Profile.cpp
+                    Day15_OS_and_Multithreading/Robot_Multithreading.cpp
+                    Day15_OS_and_Multithreading/Mutex_Data_Protection.cpp
+                    Day15_OS_and_Multithreading/RoundRobin_OS_Scheduler.cpp)
         endif()
     endif()
 endforeach()
