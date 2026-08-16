@@ -46,7 +46,10 @@ foreach(src ${SOURCES})
                     Day14_PathPlanning_and_Filtering/Trapezoidal_Velocity_Profile.cpp
                     Day15_OS_and_Multithreading/Robot_Multithreading.cpp
                     Day15_OS_and_Multithreading/Mutex_Data_Protection.cpp
-                    Day15_OS_and_Multithreading/RoundRobin_OS_Scheduler.cpp)
+                    Day15_OS_and_Multithreading/RoundRobin_OS_Scheduler.cpp
+                    Day16_Orientation_and_PathTracking/Euler_To_Quaternion_IMU.cpp
+                    Day16_Orientation_and_PathTracking/Pure_Pursuit_Controller.cpp
+                    Day16_Orientation_and_PathTracking/Atomic_Telemetry_Buffer.cpp)
         endif()
     endif()
 endforeach()
