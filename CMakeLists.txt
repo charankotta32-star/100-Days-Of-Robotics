@@ -49,7 +49,10 @@ foreach(src ${SOURCES})
                     Day15_OS_and_Multithreading/RoundRobin_OS_Scheduler.cpp
                     Day16_Orientation_and_PathTracking/Euler_To_Quaternion_IMU.cpp
                     Day16_Orientation_and_PathTracking/Pure_Pursuit_Controller.cpp
-                    Day16_Orientation_and_PathTracking/Atomic_Telemetry_Buffer.cpp)
+                    Day16_Orientation_and_PathTracking/Atomic_Telemetry_Buffer.cpp
+                    Day17_Linux_Process_and_IPC/Linux_Process_Fork.cpp
+                    Day17_Linux_Process_and_IPC/POSIX_Pipe_IPC.cpp
+                    Day17_Linux_Process_and_IPC/Linux_Signal_Handler.cpp)
         endif()
     endif()
 endforeach()
