@@ -52,7 +52,10 @@ foreach(src ${SOURCES})
                     Day16_Orientation_and_PathTracking/Atomic_Telemetry_Buffer.cpp
                     Day17_Linux_Process_and_IPC/Linux_Process_Fork.cpp
                     Day17_Linux_Process_and_IPC/POSIX_Pipe_IPC.cpp
-                    Day17_Linux_Process_and_IPC/Linux_Signal_Handler.cpp)
+                    Day17_Linux_Process_and_IPC/Linux_Signal_Handler.cpp
+                    Day18_Odometry_and_State_Estimation/Differential_Drive_Odometry.cpp
+                    Day18_Odometry_and_State_Estimation/Exponential_Filter_IMU.cpp
+                    Day18_Odometry_and_State_Estimation/Priority_Command_Queue.cpp)
         endif()
     endif()
 endforeach()
