@@ -55,7 +55,10 @@ foreach(src ${SOURCES})
                     Day17_Linux_Process_and_IPC/Linux_Signal_Handler.cpp
                     Day18_Odometry_and_State_Estimation/Differential_Drive_Odometry.cpp
                     Day18_Odometry_and_State_Estimation/Exponential_Filter_IMU.cpp
-                    Day18_Odometry_and_State_Estimation/Priority_Command_Queue.cpp)
+                    Day18_Odometry_and_State_Estimation/Priority_Command_Queue.cpp
+                    Day19_Navigation_and_Power_Systems/Potential_Field_Navigation.cpp
+                    Day19_Navigation_and_Power_Systems/Sliding_Window_Peak_Detector.cpp
+                    Day19_Navigation_and_Power_Systems/Battery_Management_System.cpp)
         endif()
     endif()
 endforeach()
