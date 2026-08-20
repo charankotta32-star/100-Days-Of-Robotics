@@ -58,7 +58,11 @@ foreach(src ${SOURCES})
                     Day18_Odometry_and_State_Estimation/Priority_Command_Queue.cpp
                     Day19_Navigation_and_Power_Systems/Potential_Field_Navigation.cpp
                     Day19_Navigation_and_Power_Systems/Sliding_Window_Peak_Detector.cpp
-                    Day19_Navigation_and_Power_Systems/Battery_Management_System.cpp)
+                    Day19_Navigation_and_Power_Systems/Battery_Management_System.cpp
+                    Day20_Kinematics_and_Watchdog/Robot_Arm_Forward_Kinematics_2DOF.cpp
+                    Day20_Kinematics_and_Watchdog/Doubly_LinkedList_Waypoint_Navigator.cpp
+                    Day20_Kinematics_and_Watchdog/Watchdog_Timer_FailSafe.cpp
+            )
         endif()
     endif()
 endforeach()
