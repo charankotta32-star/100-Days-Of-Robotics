@@ -65,6 +65,9 @@ foreach(src ${SOURCES})
                     Day21_InverseKinematics_and_Stacks/Robot_Arm_Inverse_Kinematics_2DOF.cpp
                     Day21_InverseKinematics_and_Stacks/Stack_Infix_To_Postfix_Parser.cpp
                     Day21_InverseKinematics_and_Stacks/Actuator_Slew_Rate_Limiter.cpp
+                    Day22_SensorFusion_and_Queues/IMU_Complementary_Filter_6DOF.cpp
+                    Day22_SensorFusion_and_Queues/Circular_Queue_Telemetry_Buffer.cpp
+                    Day22_SensorFusion_and_Queues/Motor_PID_AntiWindup_Controller.cpp
             )
         endif()
     endif()
