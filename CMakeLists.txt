@@ -62,6 +62,9 @@ foreach(src ${SOURCES})
                     Day20_Kinematics_and_Watchdog/Robot_Arm_Forward_Kinematics_2DOF.cpp
                     Day20_Kinematics_and_Watchdog/Doubly_LinkedList_Waypoint_Navigator.cpp
                     Day20_Kinematics_and_Watchdog/Watchdog_Timer_FailSafe.cpp
+                    Day21_InverseKinematics_and_Stacks/Robot_Arm_Inverse_Kinematics_2DOF.cpp
+                    Day21_InverseKinematics_and_Stacks/Stack_Infix_To_Postfix_Parser.cpp
+                    Day21_InverseKinematics_and_Stacks/Actuator_Slew_Rate_Limiter.cpp
             )
         endif()
     endif()
