@@ -6,7 +6,7 @@
 using namespace std;
 
 struct SensorPacket {
-    uint64_t timestamp_ms; // Unix Epoch timestamp in milliseconds
+    int64_t timestamp_ms; // Unix Epoch timestamp in milliseconds
     string sensor_name;
     double primary_reading;
 
@@ -21,7 +21,7 @@ private:
     priority_queue<SensorPacket, vector<SensorPacket>, greater<SensorPacket>> sync_queue;
 
 public:
-    void pushPacket(uint64_t ts, string name, double reading) {
+    void pushPacket(int64_t ts, string name, double reading) {
         sync_queue.push({ts, name, reading});
         cout << "[INGEST ASYNC] " << name << " packet received with Timestamp: " << ts << "ms\n";
     }

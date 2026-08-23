@@ -1,8 +1,10 @@
 #include <iostream>
 #include <vector>
 #include <iomanip>
+#include <cstdint>
 
 using namespace std;
+
 
 class CRC8Engine {
 private:
