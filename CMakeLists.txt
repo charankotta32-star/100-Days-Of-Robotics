@@ -68,6 +68,9 @@ foreach(src ${SOURCES})
                     Day22_SensorFusion_and_Queues/IMU_Complementary_Filter_6DOF.cpp
                     Day22_SensorFusion_and_Queues/Circular_Queue_Telemetry_Buffer.cpp
                     Day22_SensorFusion_and_Queues/Motor_PID_AntiWindup_Controller.cpp
+                    Day23_Raycasting_and_PacketCRC/Bresenham_Raycasting_GridMap.cpp
+                    Day23_Raycasting_and_PacketCRC/MinHeap_Sensor_Timestamp_Sync.cpp
+                    Day23_Raycasting_and_PacketCRC/LoRa_Packet_CRC8_Checksum.cpp
             )
         endif()
     endif()
