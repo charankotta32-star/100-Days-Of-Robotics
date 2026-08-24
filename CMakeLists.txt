@@ -71,6 +71,9 @@ foreach(src ${SOURCES})
                     Day23_Raycasting_and_PacketCRC/Bresenham_Raycasting_GridMap.cpp
                     Day23_Raycasting_and_PacketCRC/MinHeap_Sensor_Timestamp_Sync.cpp
                     Day23_Raycasting_and_PacketCRC/LoRa_Packet_CRC8_Checksum.cpp
+                    Day24_DiffDrive_and_ExpressionTrees/DiffDrive_Twist_To_Wheel_Kinematics.cpp
+                    Day24_DiffDrive_and_ExpressionTrees/Binary_Expression_Tree_Evaluator.cpp
+                    Day24_DiffDrive_and_ExpressionTrees/Heartbeat_Failsafe_StateMachine.cpp
             )
         endif()
     endif()
