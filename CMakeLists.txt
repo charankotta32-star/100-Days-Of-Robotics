@@ -74,6 +74,9 @@ foreach(src ${SOURCES})
                     Day24_DiffDrive_and_ExpressionTrees/DiffDrive_Twist_To_Wheel_Kinematics.cpp
                     Day24_DiffDrive_and_ExpressionTrees/Binary_Expression_Tree_Evaluator.cpp
                     Day24_DiffDrive_and_ExpressionTrees/Heartbeat_Failsafe_StateMachine.cpp
+                    Day25_Sensors_and_Deques/Analog_IR_Distance_Sensor_Calibrator.cpp
+                    Day25_Sensors_and_Deques/Deque_Trajectory_Command_Buffer.cpp
+                    Day25_Sensors_and_Deques/Motor_Deadband_Stiction_Compensator.cpp
             )
         endif()
     endif()
