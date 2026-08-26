@@ -77,6 +77,9 @@ foreach(src ${SOURCES})
                     Day25_Sensors_and_Deques/Analog_IR_Distance_Sensor_Calibrator.cpp
                     Day25_Sensors_and_Deques/Deque_Trajectory_Command_Buffer.cpp
                     Day25_Sensors_and_Deques/Motor_Deadband_Stiction_Compensator.cpp
+                    Day26_Sensors_and_LineControl/Ultrasonic_Distance_Sensor_Driver.cpp
+                    Day26_Sensors_and_LineControl/Stack_Undo_Navigation_History.cpp
+                    Day26_Sensors_and_LineControl/Proportional_Line_Follower.cpp
             )
         endif()
     endif()
