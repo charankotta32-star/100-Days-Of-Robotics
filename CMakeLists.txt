@@ -80,6 +80,9 @@ foreach(src ${SOURCES})
                     Day26_Sensors_and_LineControl/Ultrasonic_Distance_Sensor_Driver.cpp
                     Day26_Sensors_and_LineControl/Stack_Undo_Navigation_History.cpp
                     Day26_Sensors_and_LineControl/Proportional_Line_Follower.cpp
+                    Day27_StanleyControl_and_BST/Stanley_Steering_Controller.cpp
+                    Day27_StanleyControl_and_BST/BST_Obstacle_Distance_Index.cpp
+                    Day27_StanleyControl_and_BST/Median_Filter_Spike_Rejection.cpp
             )
         endif()
     endif()
