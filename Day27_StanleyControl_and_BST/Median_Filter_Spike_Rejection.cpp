@@ -15,7 +15,6 @@ public:
         buffer[0] = buffer[1] = buffer[2] = 0.0;
     }
 
-    // O(1) Median Filtering across a 3-sample sliding window
     double filter(double new_sample) {
         // Shift window
         buffer[0] = buffer[1];
