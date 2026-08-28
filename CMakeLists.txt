@@ -83,6 +83,9 @@ foreach(src ${SOURCES})
                     Day27_StanleyControl_and_BST/Stanley_Steering_Controller.cpp
                     Day27_StanleyControl_and_BST/BST_Obstacle_Distance_Index.cpp
                     Day27_StanleyControl_and_BST/Median_Filter_Spike_Rejection.cpp
+                    Day28_PivotTurns_and_DFS/Differential_Drive_Pivot_Turn.cpp
+                    Day28_PivotTurns_and_DFS/DFS_Maze_Traversal.cpp
+                    Day28_PivotTurns_and_DFS/Hardware_Task_Watchdog_Timer.cpp
             )
         endif()
     endif()
