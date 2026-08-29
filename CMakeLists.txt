@@ -86,6 +86,9 @@ foreach(src ${SOURCES})
                     Day28_PivotTurns_and_DFS/Differential_Drive_Pivot_Turn.cpp
                     Day28_PivotTurns_and_DFS/DFS_Maze_Traversal.cpp
                     Day28_PivotTurns_and_DFS/Hardware_Task_Watchdog_Timer.cpp
+                    Day29_Ackermann_and_BFS/BFS_Shortest_Path_Maze.cpp
+                    Day29_Ackermann_and_BFS/Ackermann_Steering_Kinematics.cpp
+                    Day29_Ackermann_and_BFS/Switch_Debounce_Filter.cpp
             )
         endif()
     endif()
