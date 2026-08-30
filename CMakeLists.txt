@@ -89,6 +89,9 @@ foreach(src ${SOURCES})
                     Day29_Ackermann_and_BFS/BFS_Shortest_Path_Maze.cpp
                     Day29_Ackermann_and_BFS/Ackermann_Steering_Kinematics.cpp
                     Day29_Ackermann_and_BFS/Switch_Debounce_Filter.cpp
+                    Day30_Transforms_and_Hashing/Coordinate_Transform_2D.cpp
+                    Day30_Transforms_and_Hashing/Hash_Map_Sensor_Registry.cpp
+                    Day30_Transforms_and_Hashing/Wheel_Encoder_Odometry.cpp
             )
         endif()
     endif()
