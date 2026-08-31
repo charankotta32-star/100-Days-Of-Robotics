@@ -92,6 +92,9 @@ foreach(src ${SOURCES})
                     Day30_Transforms_and_Hashing/Coordinate_Transform_2D.cpp
                     Day30_Transforms_and_Hashing/Hash_Map_Sensor_Registry.cpp
                     Day30_Transforms_and_Hashing/Wheel_Encoder_Odometry.cpp
+                    Day31_Math_and_Sorting/Trapezoidal_Rule_Odometry.cpp
+                    Day31_Math_and_Sorting/Merge_Sort_Sensor_Data.cpp
+                    Day31_Math_and_Sorting/PWM_Clock_Cycle_Math.cpp
             )
         endif()
     endif()
