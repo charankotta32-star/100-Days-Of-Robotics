@@ -1,7 +1,7 @@
 # 🤖 100 Days of Robotics & Systems Architecture
 
 > **Author:** Kotta Charan Ram Sai  
-> **Specialization:** B.Tech CSE (AI & ML) @ SRM IST KTR | SGPA: 9.4
+> **Specialization:** B.Tech CSE (AI & ML) @ SRM IST KTR | SGPA: 9.45
 > **Workstation:** Linux (WSL2 / Ubuntu) | ISO C++20 | JetBrains CLion  
 
 ---
