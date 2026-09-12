@@ -98,6 +98,9 @@ foreach(src ${SOURCES})
                     Day32_BTS7960_and_TreeTraversals/BTS7960_Dual_Motor_Driver.cpp
                     Day32_BTS7960_and_TreeTraversals/Binary_Tree_Level_Order_Traversal.cpp
                     Day32_BTS7960_and_TreeTraversals/Serial_Packet_Frame_Parser.cpp
+                    Day33_PolarNav_and_BSTDeletion/Polar_Coordinates_Waypoint_Navigator.cpp
+                    Day33_PolarNav_and_BSTDeletion/BST_Node_Deletion_Algorithm.cpp
+                    Day33_PolarNav_and_BSTDeletion/Sensor_Noise_Variance_Estimator.cpp
             )
         endif()
     endif()
