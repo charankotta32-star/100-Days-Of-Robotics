@@ -101,6 +101,7 @@ foreach(src ${SOURCES})
                     Day33_PolarNav_and_BSTDeletion/Polar_Coordinates_Waypoint_Navigator.cpp
                     Day33_PolarNav_and_BSTDeletion/BST_Node_Deletion_Algorithm.cpp
                     Day33_PolarNav_and_BSTDeletion/Sensor_Noise_Variance_Estimator.cpp
+                    Day34_WallClock_Odometry_Patch/WallClock_Odometry_Integrator.cpp
             )
         endif()
     endif()
