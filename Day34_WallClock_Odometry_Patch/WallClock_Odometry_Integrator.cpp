@@ -2,6 +2,7 @@
 #include <cmath>
 #include <chrono>
 #include <iomanip>
+#include <thread>
 
 using namespace std;
 
@@ -79,19 +80,19 @@ int main() {
     cout << "[INIT] Odometry system started at 20Hz expectation...\n";
     odom.updatePose(0.0, 0.0); // Init clock
 
-    // Simulated wheel velocities (rad/s)
-    double wl = 15.0;
-    double wr = 16.0; // Slightly faster right wheel to curve left
-
     for (int step = 1; step <= 4; step++) {
+        // Moved inside the loop to clear the Scope Warnings!
+        double wl = 15.0;
+        double wr = 16.0; // Slightly faster right wheel to curve left
+
         cout << "\nStep " << step << ": ";
 
         // Simulating a dropped packet on Step 3
         if (step == 3) {
             cout << "Simulating Network Drop (100ms latency)...\n";
-            _sleep(100); // Windows sleep for 100ms
+            this_thread::sleep_for(chrono::milliseconds(100)); // Cross-platform sleep
         } else {
-            _sleep(50);  // Normal 20Hz (50ms) operation
+            this_thread::sleep_for(chrono::milliseconds(50));  // Cross-platform sleep
         }
 
         odom.updatePose(wl, wr);
