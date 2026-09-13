@@ -103,6 +103,8 @@ foreach(src ${SOURCES})
                     Day33_PolarNav_and_BSTDeletion/Sensor_Noise_Variance_Estimator.cpp
                     Day34_WallClock_Odometry_Patch/WallClock_Odometry_Integrator.cpp
                     Day35_OmniLink_Midpoint_Odometry/Midpoint_Cumulative_Odometry.cpp
+                    Day35_OmniLink_Midpoint_Odometry/Stack_Balanced_Parentheses.cpp
+                    Day35_OmniLink_Midpoint_Odometry/Circular_Queue_Array.cpp
             )
         endif()
     endif()
