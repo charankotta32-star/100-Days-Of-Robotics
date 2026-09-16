@@ -105,6 +105,9 @@ foreach(src ${SOURCES})
                     Day35_OmniLink_Midpoint_Odometry/Midpoint_Cumulative_Odometry.cpp
                     Day35_OmniLink_Midpoint_Odometry/Stack_Balanced_Parentheses.cpp
                     Day35_OmniLink_Midpoint_Odometry/Circular_Queue_Array.cpp
+                    Day36_MotionProfiles_and_Dijkstra/Trapezoidal_Velocity_Profile.cpp
+                    Day36_MotionProfiles_and_Dijkstra/Dijkstra_Shortest_Path_Graph.cpp
+                    Day36_MotionProfiles_and_Dijkstra/OmniSim_Serial_JSON_Bridge.cpp
             )
         endif()
     endif()
