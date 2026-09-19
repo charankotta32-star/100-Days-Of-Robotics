@@ -108,6 +108,9 @@ foreach(src ${SOURCES})
                     Day36_MotionProfiles_and_Dijkstra/Trapezoidal_Velocity_Profile.cpp
                     Day36_MotionProfiles_and_Dijkstra/Dijkstra_Shortest_Path_Graph.cpp
                     Day36_MotionProfiles_and_Dijkstra/OmniSim_Serial_JSON_Bridge.cpp
+                    Day37_DWA_DSU_and_CRC16/DWA_Dynamic_Window_Planner.cpp
+                    Day37_DWA_DSU_and_CRC16/Kruskal_MST_Disjoint_Set.cpp
+                    Day37_DWA_DSU_and_CRC16/CRC16_CCITT_Fast_Lookup.cpp
             )
         endif()
     endif()
