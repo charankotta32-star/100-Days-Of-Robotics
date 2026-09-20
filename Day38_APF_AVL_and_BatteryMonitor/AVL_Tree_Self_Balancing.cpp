@@ -16,16 +16,17 @@ class AVLTree {
 private:
     AVLNode* root;
 
-    int getHeight(AVLNode* node) {
+    // Made static & const-safe to resolve all Clang-Tidy warnings and const qualifier errors
+    static int getHeight(const AVLNode* node) {
         return node ? node->height : 0;
     }
 
-    int getBalanceFactor(AVLNode* node) {
+    static int getBalanceFactor(const AVLNode* node) {
         return node ? getHeight(node->left) - getHeight(node->right) : 0;
     }
 
     // Right Rotation (fixes Left-Heavy tree: LL Case)
-    AVLNode* rightRotate(AVLNode* y) {
+    static AVLNode* rightRotate(AVLNode* y) {
         AVLNode* x = y->left;
         AVLNode* T2 = x->right;
 
@@ -41,7 +42,7 @@ private:
     }
 
     // Left Rotation (fixes Right-Heavy tree: RR Case)
-    AVLNode* leftRotate(AVLNode* x) {
+    static AVLNode* leftRotate(AVLNode* x) {
         AVLNode* y = x->right;
         AVLNode* T2 = y->left;
 
@@ -74,22 +75,21 @@ private:
         int balance = getBalanceFactor(node);
 
         // 4. Handle 4 Imbalance Cases:
-        
-        // Case 1: Left Left (LL) -> Single Right Rotate
+        // Case 1: Left Left (LL)
         if (balance > 1 && key < node->left->key)
             return rightRotate(node);
 
-        // Case 2: Right Right (RR) -> Single Left Rotate
+        // Case 2: Right Right (RR)
         if (balance < -1 && key > node->right->key)
             return leftRotate(node);
 
-        // Case 3: Left Right (LR) -> Left Rotate child, then Right Rotate root
+        // Case 3: Left Right (LR)
         if (balance > 1 && key > node->left->key) {
             node->left = leftRotate(node->left);
             return rightRotate(node);
         }
 
-        // Case 4: Right Left (RL) -> Right Rotate child, then Left Rotate root
+        // Case 4: Right Left (RL)
         if (balance < -1 && key < node->right->key) {
             node->right = rightRotate(node->right);
             return leftRotate(node);
@@ -98,15 +98,15 @@ private:
         return node;
     }
 
-    void inOrderTraversal(AVLNode* node) const {
+    void inOrderTraversal(const AVLNode* node) const {
         if (node) {
             inOrderTraversal(node->left);
-            cout << node->key << "(BF: " << (getHeight(node->left) - getHeight(node->right)) << ") ";
+            cout << node->key << "(BF: " << getBalanceFactor(node) << ") ";
             inOrderTraversal(node->right);
         }
     }
 
-    void destroy(AVLNode* node) {
+    static void destroy(AVLNode* node) {
         if (node) {
             destroy(node->left);
             destroy(node->right);
