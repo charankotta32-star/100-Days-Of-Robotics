@@ -111,6 +111,9 @@ foreach(src ${SOURCES})
                     Day37_DWA_DSU_and_CRC16/DWA_Dynamic_Window_Planner.cpp
                     Day37_DWA_DSU_and_CRC16/Kruskal_MST_Disjoint_Set.cpp
                     Day37_DWA_DSU_and_CRC16/CRC16_CCITT_Fast_Lookup.cpp
+                    Day38_APF_AVL_and_BatteryMonitor/Potential_Field_Planner.cpp
+                    Day38_APF_AVL_and_BatteryMonitor/AVL_Tree_Self_Balancing.cpp
+                    Day38_APF_AVL_and_BatteryMonitor/LiPo_Battery_Monitor_Hysteresis.cpp
             )
         endif()
     endif()
