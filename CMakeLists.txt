@@ -114,6 +114,9 @@ foreach(src ${SOURCES})
                     Day38_APF_AVL_and_BatteryMonitor/Potential_Field_Planner.cpp
                     Day38_APF_AVL_and_BatteryMonitor/AVL_Tree_Self_Balancing.cpp
                     Day38_APF_AVL_and_BatteryMonitor/LiPo_Battery_Monitor_Hysteresis.cpp
+                    Day39_Kalman_Topological_and_MotorProtect/Kalman_Filter_1D_Tracker.cpp
+                    Day39_Kalman_Topological_and_MotorProtect/Topological_Sort_Kahns_Algorithm.cpp
+                    Day39_Kalman_Topological_and_MotorProtect/Motor_Stall_Overcurrent_Protector.cpp
             )
         endif()
     endif()
