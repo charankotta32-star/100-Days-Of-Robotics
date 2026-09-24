@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 #include <algorithm>
 #include <iomanip>
 
@@ -60,8 +61,8 @@ public:
         }
     }
 
-    MotorSafetyState getState() const { return current_state; }
-    double getThermalLoad() const { return thermal_accumulator; }
+    [[nodiscard]] MotorSafetyState getState() const { return current_state; }
+    [[nodiscard]] double getThermalLoad() const { return thermal_accumulator; }
 };
 
 int main() {
@@ -70,7 +71,6 @@ int main() {
     MotorStallProtector guard;
     cout << fixed << setprecision(1);
 
-    double dt = 0.5; // 500ms telemetry interval
     int requested_pwm = 80; // 80% throttle command
 
     // Simulated scenario: Normal driving -> Hits obstacle/wall (Ticks = 0, Current = 7.2A) -> Recovers
@@ -80,7 +80,7 @@ int main() {
         string condition;
     };
 
-    vector<StepData> test_run = {
+    const vector<StepData> test_run = {
         { 1.8, 45, "Cruising on flat arena floor" },
         { 2.1, 42, "Cruising on flat arena floor" },
         { 7.2,  0, "🚨 CRASH: Hit arena barrier! Wheel stopped, stall current!" },
@@ -91,6 +91,8 @@ int main() {
 
     cout << "Step | Motor Current | Delta Ticks | Commanded | Safe Output | Thermal I^2t | Protection State" << endl;
     cout << "-------------------------------------------------------------------------------------------------" << endl;
+
+    const double dt = 0.5; // 500ms telemetry interval (moved to inner scope)
 
     for (size_t i = 0; i < test_run.size(); i++) {
         int safe_pwm = guard.evaluateProtection(test_run[i].current_amps,
