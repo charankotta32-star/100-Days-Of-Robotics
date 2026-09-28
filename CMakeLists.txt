@@ -117,6 +117,9 @@ foreach(src ${SOURCES})
                     Day39_Kalman_Topological_and_MotorProtect/Kalman_Filter_1D_Tracker.cpp
                     Day39_Kalman_Topological_and_MotorProtect/Topological_Sort_Kahns_Algorithm.cpp
                     Day39_Kalman_Topological_and_MotorProtect/Motor_Stall_Overcurrent_Protector.cpp
+                    Day40_AStar_Trie_and_EMAFilter/A_Star_Grid_Pathfinder.cpp
+                    Day40_AStar_Trie_and_EMAFilter/Trie_Prefix_Tree.cpp
+                    Day40_AStar_Trie_and_EMAFilter/EMA_Low_Pass_Filter.cpp
             )
         endif()
     endif()
