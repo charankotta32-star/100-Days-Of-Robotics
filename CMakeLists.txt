@@ -120,6 +120,9 @@ foreach(src ${SOURCES})
                     Day40_AStar_Trie_and_EMAFilter/A_Star_Grid_Pathfinder.cpp
                     Day40_AStar_Trie_and_EMAFilter/Trie_Prefix_Tree.cpp
                     Day40_AStar_Trie_and_EMAFilter/EMA_Low_Pass_Filter.cpp
+                    Day41_AdaptivePursuit_and_SegmentTree/Adaptive_Pure_Pursuit_Tracker.cpp
+                    Day41_AdaptivePursuit_and_SegmentTree/Segment_Tree_Range_Minimum.cpp
+                    Day41_AdaptivePursuit_and_SegmentTree/LockFree_SPSC_RingBuffer.cpp
             )
         endif()
     endif()
