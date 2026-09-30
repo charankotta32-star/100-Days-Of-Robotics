@@ -123,6 +123,9 @@ foreach(src ${SOURCES})
                     Day41_AdaptivePursuit_and_SegmentTree/Adaptive_Pure_Pursuit_Tracker.cpp
                     Day41_AdaptivePursuit_and_SegmentTree/Segment_Tree_Range_Minimum.cpp
                     Day41_AdaptivePursuit_and_SegmentTree/LockFree_SPSC_RingBuffer.cpp
+                    Day42_ParticleFilter_Fenwick_and_Goertzel/Particle_Filter_1D_Localizer.cpp
+                    Day42_ParticleFilter_Fenwick_and_Goertzel/Fenwick_Tree_Binary_Indexed.cpp
+                    Day42_ParticleFilter_Fenwick_and_Goertzel/Goertzel_Acoustic_Resonance_Detector.cpp
             )
         endif()
     endif()
