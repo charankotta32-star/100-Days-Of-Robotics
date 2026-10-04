@@ -126,6 +126,9 @@ foreach(src ${SOURCES})
                     Day42_ParticleFilter_Fenwick_and_Goertzel/Particle_Filter_1D_Localizer.cpp
                     Day42_ParticleFilter_Fenwick_and_Goertzel/Fenwick_Tree_Binary_Indexed.cpp
                     Day42_ParticleFilter_Fenwick_and_Goertzel/Goertzel_Acoustic_Resonance_Detector.cpp
+                    Day43_RRT_BellmanFord_and_CANBus/RRT_Rapidly_Exploring_Random_Tree.cpp
+                    Day43_RRT_BellmanFord_and_CANBus/Bellman_Ford_Shortest_Path.cpp
+                    Day43_RRT_BellmanFord_and_CANBus/CAN_Bus_Frame_Filter.cpp
             )
         endif()
     endif()
