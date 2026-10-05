@@ -129,6 +129,9 @@ foreach(src ${SOURCES})
                     Day43_RRT_BellmanFord_and_CANBus/RRT_Rapidly_Exploring_Random_Tree.cpp
                     Day43_RRT_BellmanFord_and_CANBus/Bellman_Ford_Shortest_Path.cpp
                     Day43_RRT_BellmanFord_and_CANBus/CAN_Bus_Frame_Filter.cpp
+                    Day44_VFH_FloydWarshall_and_2DOFPID/VFH_Polar_Obstacle_Density.cpp
+                    Day44_VFH_FloydWarshall_and_2DOFPID/Floyd_Warshall_All_Pairs_Shortest_Path.cpp
+                    Day44_VFH_FloydWarshall_and_2DOFPID/Industrial_2DOF_PID_Controller.cpp
             )
         endif()
     endif()
